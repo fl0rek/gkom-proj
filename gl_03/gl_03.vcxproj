@@ -14,6 +14,7 @@
     <ProjectGuid>{A85D9986-9B0F-4401-A405-55CC87832955}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>gl_03</RootNamespace>
+    <ProjectName>projekt</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -81,15 +82,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gl_03.cpp" />
+    <ClCompile Include="AnimationController.cpp" />
+    <ClCompile Include="DrawableGroup.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="InvertedAnimation.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="RotationController.cpp" />
     <ClCompile Include="shprogram.cpp" />
+    <ClCompile Include="TexturedModel.cpp" />
+    <ClCompile Include="TimelineController.cpp" />
+    <ClCompile Include="Transfromation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="gl_03.frag" />
-    <None Include="gl_03.vert" />
+    <None Include="solidColour.frag" />
+    <None Include="solidColour.vert" />
+    <None Include="textured.frag" />
+    <None Include="textured.vert" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnimationController.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="DrawableGroup.h" />
+    <ClInclude Include="InvertedAnimation.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="models.h" />
+    <ClInclude Include="RotationController.h" />
     <ClInclude Include="shprogram.h" />
+    <ClInclude Include="TexturedModel.h" />
+    <ClInclude Include="TimelineController.h" />
+    <ClInclude Include="Transfromation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

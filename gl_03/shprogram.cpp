@@ -33,6 +33,7 @@ GLuint compile_shader(const GLchar* shaderCode, GLenum shaderType)
 		GLchar infoLog[512];
 		glGetShaderInfoLog(shader_id, sizeof(infoLog), NULL, infoLog);
 		string msg = string("Shader compilation: ") + infoLog;
+		std::cerr << msg << std::endl << std::flush; // yea I know endl flushes
 		throw exception(msg.c_str());
 	}
 	return shader_id;
